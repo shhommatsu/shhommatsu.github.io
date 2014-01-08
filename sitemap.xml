@@ -1,19 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://shhommatsu.github.com/blog/2014/01/07/title/</loc>
-        <lastmod>2014-01-07T13:23:54+09:00</lastmod>
+        <loc>http://shhommatsu.github.io/blog/2014/01/07/title/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
     </url>
     <url>
-        <loc>http://shhommatsu.github.com/blog/2014/01/08/testtesr/</loc>
-        <lastmod>2014-01-08T12:19:08+09:00</lastmod>
+        <loc>http://shhommatsu.github.io/blog/2014/01/08/testtesr/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
     </url>
     <url>
-        <loc>http://shhommatsu.github.com/blog/archives/</loc>
-        <lastmod>2014-01-08T12:19:08+09:00</lastmod>
+        <loc>http://shhommatsu.github.io/about/</loc>
+        <lastmod>2014-01-08T18:10:14+09:00</lastmod>
     </url>
     <url>
-        <loc>http://shhommatsu.github.com/</loc>
-        <lastmod>2014-01-08T12:19:08+09:00</lastmod>
+        <loc>http://shhommatsu.github.io/archives/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shhommatsu.github.io/blog/archives/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shhommatsu.github.io/blog/categories/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shhommatsu.github.io/blog/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shhommatsu.github.io/</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shhommatsu.github.io/robots.txt</loc>
+        <lastmod>2014-01-08T18:01:22+09:00</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[THINK UI]]></title>
   <link href="http://shhommatsu.github.com/atom.xml" rel="self"/>
   <link href="http://shhommatsu.github.com/"/>
-  <updated>2014-01-08T12:16:00+09:00</updated>
+  <updated>2014-01-08T12:19:28+09:00</updated>
   <id>http://shhommatsu.github.com/</id>
   <author>
     <name><![CDATA[shhommatsu]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[testTesr]]></title>
+    <link href="http://shhommatsu.github.com/blog/2014/01/08/testtesr/"/>
+    <updated>2014-01-08T12:19:08+09:00</updated>
+    <id>http://shhommatsu.github.com/blog/2014/01/08/testtesr</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[title]]></title>

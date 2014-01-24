@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[sss]]></title>
+  <title><![CDATA[Is This It]]></title>
   <link href="http://shhommatsu.github.io/atom.xml" rel="self"/>
   <link href="http://shhommatsu.github.io/"/>
-  <updated>2014-01-08T18:12:43+09:00</updated>
+  <updated>2014-01-24T11:22:01+09:00</updated>
   <id>http://shhommatsu.github.io/</id>
   <author>
     <name><![CDATA[shhommatsu]]></name>
@@ -14,20 +14,29 @@
 
   
   <entry>
-    <title type="html"><![CDATA[testTesr]]></title>
-    <link href="http://shhommatsu.github.io/blog/2014/01/08/testtesr/"/>
-    <updated>2014-01-08T12:19:08+09:00</updated>
-    <id>http://shhommatsu.github.io/blog/2014/01/08/testtesr</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[title]]></title>
-    <link href="http://shhommatsu.github.io/blog/2014/01/07/title/"/>
-    <updated>2014-01-07T13:14:43+09:00</updated>
-    <id>http://shhommatsu.github.io/blog/2014/01/07/title</id>
-    <content type="html"><![CDATA[<p>aaaaa</p>
+    <title type="html"><![CDATA[とりあげる予定のアプリ]]></title>
+    <link href="http://shhommatsu.github.io/blog/2014/01/23/watch-list/"/>
+    <updated>2014-01-23T10:59:49+09:00</updated>
+    <id>http://shhommatsu.github.io/blog/2014/01/23/watch-list</id>
+    <content type="html"><![CDATA[<h3>Twitter公式アプリ(iPhone,Android)</h3>
+
+<p>iOSとAndroid標準にそれぞれ準拠させているように思うので取り上げる予定です。</p>
+
+<h3>Feedly(iPhone,Android)</h3>
+
+<p>カード式のUIがおもしろいので取り上げる予定です。</p>
+
+<h3>Tweetbot(iPhone)</h3>
+
+<p>小気味良いUIなので取り上げる予定です。</p>
+
+<h3>Waterlogue(iPhone)</h3>
+
+<p>売れているので取り上げる予定です。</p>
+
+<h3>Play Store(Android)</h3>
+
+<p>微妙な使い勝手なので取り上げる予定です。</p>
 ]]></content>
   </entry>
   

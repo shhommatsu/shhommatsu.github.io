@@ -10,9 +10,9 @@
 <meta name="author" content="shhommatsu"> 
 
 <meta name="description" content="個人プロジェクト
-勤務先案件 個人プロジェクト 現在通っている専門学校の授業内で始まったプロジェクト。 Web おもちゃサーチ(仮)(2013年12月〜) 未完成。
-授業の課題はWebサービスを作ってAWS上でサーバー管理までやること。
-Amazon Product APIを利用し、 &hellip;"> <meta name="keywords" content="">
+勤務先案件 株式会社Grander自社開発案件 アプリ 在庫管理アプリ_Android(2013年9月〜) 概要 未リリース。
+バーコードをスキャンして商品の出庫や入庫を管理するアプリ。 自社開発のAPIと連携。
+アプリ開発人数1人。 楽天ショップ向けアプリ_Android、 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -96,52 +96,168 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="page">
-    <div class="entry-content"><p>個人プロジェクト<br/>
-<a href="/portfolio-work/">勤務先案件</a></p>
+    <div class="entry-content"><p><a href="/portfolio-personal/">個人プロジェクト</a><br/>
+勤務先案件</p>
 
-<h2>個人プロジェクト</h2>
+<h2>株式会社Grander自社開発案件</h2>
 
-<p>現在通っている専門学校の授業内で始まったプロジェクト。</p>
+<h3>アプリ</h3>
 
-<h3>Web</h3>
+<h4>在庫管理アプリ_Android(2013年9月〜)</h4>
 
-<h4>おもちゃサーチ(仮)(2013年12月〜)</h4>
+<h5>概要</h5>
 
-<p>未完成。<br/>
-授業の課題はWebサービスを作ってAWS上でサーバー管理までやること。<br/>
-Amazon Product APIを利用し、おもちゃのレビューを探すアプリ。<br/>
-おもちゃレビューのGunosyを目指して開発中。<br/>
-cakePHP+Vagrantで開発。<br/>
-開発人数1人。</p>
+<p>未リリース。<br/>
+バーコードをスキャンして商品の出庫や入庫を管理するアプリ。 <br/>
+自社開発のAPIと連携。<br/>
+アプリ開発人数1人。</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/6905569/omochasearch.png" alt="おもちゃサーチ" /><br/>
-<img src="https://dl.dropboxusercontent.com/u/6905569/omochasearc_mock.jpg" alt="おもちゃサーチ　モック" /></p>
+<h4>楽天ショップ向けアプリ_Android、iOS(2013年12月〜)</h4>
 
-<h4>ワケター(仮)(2013年10月〜)</h4>
+<h5>概要</h5>
 
-<p>未完成。<br/>
-授業の課題はツイッタークライアントを作ってHerokuでデプロイすること。<br/>
-リスト整理に特化したツイッタークライアント。<br/>
-リストを作る、削除する、ユーザーをリストに加えるなどをもっと手軽に行えるようにすることを目指す。<br/>
-ベンチマークはTweetDeckのカスタムタイムライン。<br/>
-Play frameworkで開発(Java)。<br/>
-Controller部とView部に分かれて開発。自分はController部分を担当。<br/>
-開発人数2人、bitbucketにてソース管理。</p>
+<p>自社のEC部署のAndroid版リリース済。<br/>
+<a href="https://play.google.com/store/apps/details?id=jp.grander.msa.grandonline&amp;hl=ja">アプリリンク</a>  <br/>
+楽天ショップ向けに自ショップのアプリをリリースするサービス。<br/>
+商品の検索や購入がアプリで完結。プレスリリース配信済。<br/>
+楽天APIを利用した自社開発APIと連携。</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/6905569/wakettar.png" alt="ワケター" /><br/>
-<img src="https://dl.dropboxusercontent.com/u/6905569/wakettar_mock.jpg" alt="ワケター　モック" /></p>
+<p>他店舗向けの実装はまだできていない。</p>
 
-<h3>モック</h3>
+<p>アプリ開発人数1人。Android版IDEはAndroidStudio(0.4.2)、Gradleビルド。
+iOS版はXcode5,CocoaPod。</p>
 
-<h4>doodle(2013年10月〜)</h4>
+<h5>実装</h5>
 
-<p>未完成。<br/>
-授業の課題は育成アプリを考えて、ポートフォリオにつかえるようなモックをIllustratorでつくること。<br/>
-自分はお絵描き育成アプリを企画。  <br/>
-UIについては、メインのターゲットである「女子層」を意識して、ドロワーや隠れるツールバーなどのわかりにくいUIは避けて考えた。<br/>
-<a href="https://dl.dropboxusercontent.com/u/6905569/doodle_portfolio.pdf" title="doodle企画書">企画書(pdf)</a></p>
+<ul>
+<li>Android
 
-<p><img src="https://dl.dropboxusercontent.com/u/6905569/doodle_mock.png" alt="doodle　モック" /></p>
+<ul>
+<li>supportV7使用、2.3系でもアクションバータブ。</li>
+<li>AsyncHttpライブラリを使用、非同期に画像通信。</li>
+</ul>
+</li>
+<li>iOS
+
+<ul>
+<li>AFNetworking2.0ライブラリを使用、高速な画像取得。</li>
+<li>MMDrawerライブラリを使用、ドロワーの実装。</li>
+<li>MBProgressHub</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/6905569/screen-shot-1.png" alt="Android" /><br/>
+<img src="https://dl.dropboxusercontent.com/u/6905569/screenshot-6.png" alt="未完成iPhone" /></p>
+
+<h2>株式会社Grander受託案件</h2>
+
+<h3>アプリ</h3>
+
+<h4>画像認識アプリ_Android(2013年11月〜12月)</h4>
+
+<h5>概要</h5>
+
+<p>リリース済。</p>
+
+<p>画像認識部分はライブラリの提供をうけ、クライアントの要望にあうように実装。<br/>
+アプリ開発人数1人。IDEはintelliJ(v12)。</p>
+
+<h5>実装</h5>
+
+<ul>
+<li>擬似ナビゲーションバー、フッター
+
+<ul>
+<li>表示アイコンやナビゲーションバーの戻る機能などを調整</li>
+</ul>
+</li>
+<li>画像認識画面
+
+<ul>
+<li>表示される画像などを調整</li>
+</ul>
+</li>
+<li>画像認識の履歴画面（新規作成）
+
+<ul>
+<li>お気に入り機能　DBにisFavarite追加</li>
+<li>ListViewスワイプ削除ボタン機能　スワイプを判定して削除ボタン   　</li>
+<li>履歴100件縛り　履歴を100件限定にするためDBからのselectで調整</li>
+</ul>
+</li>
+<li>情報画面（新規作成）
+
+<ul>
+<li>使い方(画像)や利用規約(WebView)画面の作成　fragment切り替え</li>
+</ul>
+</li>
+</ul>
+
+
+<h5>テスト</h5>
+
+<p>テスト仕様書を作成し、ネットワーク状態や端末バージョンの試験を実施。<br/>
+同アプリのiOS版は先輩社員が作成。</p>
+
+<ul>
+<li>使用端末
+
+<ul>
+<li>iPhone4s(iOS6)</li>
+<li>iPhone5(iOS6)</li>
+<li>iPhone5(iOS7)</li>
+<li>iPhone5s(iOS7)</li>
+<li>Xperia Acro (v2.3.3)</li>
+<li>Galaxy SII (v2.3.3)</li>
+<li>Xperia GX (v4.1.2)</li>
+<li>Galaxy S III(v4.1.2)</li>
+</ul>
+</li>
+<li>テスト内容
+
+<ul>
+<li>画像認識を端末に付き300回</li>
+<li>ネットワークがない状態でのクラッシュ調査 etc</li>
+</ul>
+</li>
+</ul>
+
+
+<p><a href="http://k-tai.impress.co.jp/docs/news/20131216_627921.html#contents-section-2">アプリの紹介リンク（インプレスサイト）</a><br/>
+<img src="https://dl.dropboxusercontent.com/u/6905569/screenshot-5.png" alt="画像認識画面" /></p>
+
+<h4>美容系SNSアプリ_Android(2013年10月〜)</h4>
+
+<h5>概要</h5>
+
+<p>未リリース。</p>
+
+<p>先輩社員が作っているアプリの以下の機能の実装をサポート。<br/>
+アプリ開発人数2人。ソース管理は、単発機能アプリを自分がbitbucketにあげて、先輩社員が本アプリに実装。<br/>
+（依存性の問題が解決できなかったため。）</p>
+
+<h5>実装</h5>
+
+<ul>
+<li>撮影した画像を正方形に切り取る機能
+
+<ul>
+<li>Instagram(Android版)のような切り抜きライブラリを使用</li>
+</ul>
+</li>
+<li>アクションバータブに未読や新着のBadgeをつける機能
+
+<ul>
+<li>Badgeのライブラリを使用。</li>
+</ul>
+</li>
+<li>入力フォームのバリデーション</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/6905569/screenshot-4.png" alt="アクションバータブのバッジ" /></p>
 </div>
 </article>
 

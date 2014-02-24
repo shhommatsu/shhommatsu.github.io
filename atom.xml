@@ -4,7 +4,7 @@
   <title><![CDATA[Is This It]]></title>
   <link href="http://shhommatsu.github.io/atom.xml" rel="self"/>
   <link href="http://shhommatsu.github.io/"/>
-  <updated>2014-01-31T11:03:06+09:00</updated>
+  <updated>2014-02-24T11:17:01+09:00</updated>
   <id>http://shhommatsu.github.io/</id>
   <author>
     <name><![CDATA[shhommatsu]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cocos2d v3.0 環境構築メモ]]></title>
+    <link href="http://shhommatsu.github.io/blog/2014/02/21/cocos2d/"/>
+    <updated>2014-02-21T11:05:31+09:00</updated>
+    <id>http://shhommatsu.github.io/blog/2014/02/21/cocos2d</id>
+    <content type="html"><![CDATA[<hr />
+
+<h3>当方環境</h3>
+
+<ul>
+<li>OS X Marvericks</li>
+<li>HomeBrew</li>
+<li>zsh</li>
+<li>cocos2d v3.0</li>
+<li>Xcode5</li>
+<li>IntelliJ12</li>
+<li>AndroidSDK</li>
+<li>AndroidNDK</li>
+</ul>
+
+
+<h3>最初にやること</h3>
+
+<p>AndroidNDKのパスを通しておく<br/>
+~/.zprofile</p>
+
+<pre><code>export NDK_ROOT=/path/to/android-ndk
+export ANDROID_HOME=/path/to/android-sdk
+</code></pre>
+
+<h3>次にやること</h3>
+
+<p>マルチプラットフォームプロジェクトを作成する。<br/>
+Terminal</p>
+
+<pre><code>./create_project.py -n Name -k com.example.name -l cpp -p /path/to/yourworkspace
+</code></pre>
+
+<h3>できるディレクトリ構成</h3>
+
+<ul>
+<li>Classes</li>
+<li>CMakeLists.txt</li>
+<li>cocos2d</li>
+<li>proj.android</li>
+<li>proj.ios_mac</li>
+<li>proj.linux</li>
+<li>proj.win32</li>
+<li>Resouces</li>
+</ul>
+
+
+<h3>共通</h3>
+
+<p>C ++ファイルはClassesに追加。<br/>
+リソースファイルはResoucesに追加。</p>
+
+<h3>Android対応</h3>
+
+<p>Classesに追加したファイルを記述する。<br/>
+proj.android/jni/Android.mk</p>
+
+<pre><code>LOCAL_SRC_FILES := hellocpp/main.cpp \
+               ../../Classes/AppDelegate.cpp \
+               ../../Classes/GameScene.cpp \
+               ../../Classes/Config.cpp \
+               ../../Classes/BlockSprite.cpp \
+               ../../Classes/CCPlaySE.cpp
+</code></pre>
+
+<p>ビルドする。<br/>
+Terminal</p>
+
+<pre><code>./build_native.py
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[セミナー「非ゲーム系アプリビジネスモデル最前線」まとめ]]></title>
